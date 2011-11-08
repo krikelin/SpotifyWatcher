@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="WB">
+		<item name="android:background">@drawable/header</item>
+	</style>
+	<style name="PropView">
+		<item name="android:background">#444444</item>
+		<item name="android:dividerHeight">2px</item>
+		<item name="android:divider">@drawable/divider</item>   
+	</style>
+	<style name="ListView">
+		<item name="android:background">@color/background_color</item>
+		<item name="android:foreground">#FFFFFF</item>
+		<item name="android:dividerHeight">2px</item>
+		<item name="android:listSelector">@drawable/menuitem</item>
+		<item name="android:divider">@drawable/divider</item>  
+	</style>
+	<style name="Spotify" parent="@android:style/Theme.Black">
+		<item name="android:windowTitleBackgroundStyle">@style/WB</item>
+	
+		<item name="android:listViewStyle">@style/ListView</item>
+		<!--  <item name="android:background">#444444</item> -->
+	</style>
+</resources>

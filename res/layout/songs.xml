@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" android:padding="3pt" android:layout_gravity="center_vertical" android:layout_height="55pt">
+    <LinearLayout android:layout_height="fill_parent" android:layout_width="wrap_content" android:id="@+id/linearLayout3" android:layout_weight="1">
+        <LinearLayout android:layout_height="fill_parent" android:orientation="vertical" android:layout_width="wrap_content" android:id="@+id/linearLayout1" android:layout_weight="1">
+            <TextView android:text="${Song.Title}" android:layout_width="fill_parent" android:id="@+id/TextView01" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="12pt"></TextView>
+            <TextView android:text="2" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:typeface="normal" android:id="@+id/TextView02" android:textSize="8pt"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_height="fill_parent" android:layout_width="wrap_content" android:id="@+id/linearLayout2" android:layout_gravity="center_vertical">
+        <ProgressBar android:layout_height="wrap_content" android:id="@+id/progressBar1" android:layout_width="wrap_content" style="?android:attr/progressBarStyleHorizontal"></ProgressBar>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

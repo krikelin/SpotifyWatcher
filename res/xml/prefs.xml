@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<EditTextPreference android:dialogMessage="Artist to show settings on" android:dialogTitle="Artist" android:key="Artist" android:selectable="true" android:defaultValue="Dr. Sounds" android:title="PrimaryArtist" android:enabled="true" android:shouldDisableView="false"></EditTextPreference>
+</PreferenceScreen>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_description">Watch a approximately daily plays for your content on spotify based on the popularity</string>
+    <string name="hello">Hello World, main!</string>
+    <string name="app_name">SpotifyWatcher</string>
+    <string name="str_countplays">Count plays</string>
+    <string name="srcrp">Plays per day</string>
+    <string-array name="genres">
+        <item>Ambient</item>
+        <item>Electronica</item>
+        <item>NewAge</item>
+        <item>Rock</item>
+        <item>Pop</item>
+        <item>World</item>
+        <item>Trance</item>
+    </string-array>
+    <string name="play_log">Play log </string>
+</resources>
