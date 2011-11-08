@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="wrap_content"
-  android:layout_height="wrap_content">
+  android:layout_width="fill_parent"
+  android:layout_height="64dp"
+  android:orientation="horizontal">
+	<ImageButton android:src="@drawable/ic_home" android:id="@+id/mnuHome" android:layout_weight="1" android:background="@drawable/menubutton" android:layout_width="32pt" android:layout_height="32pt">
+	    
+	</ImageButton>
+	<ImageButton android:id="@+id/mnuScan" android:src="@drawable/ic_scan" android:layout_weight="1" android:background="@drawable/menubutton" android:layout_width="32pt" android:layout_height="32pt">
+	    
+	</ImageButton>
+	<ImageButton android:id="@+id/mnuSettings" android:layout_weight="1" android:background="@drawable/menubutton" android:layout_width="32pt" android:layout_height="32pt">
+	    
+	</ImageButton>
 </LinearLayout>
- 
+  
+     
+    
