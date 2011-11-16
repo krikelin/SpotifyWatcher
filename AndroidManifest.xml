@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.krakelin.SpotifyWatcher"
-      android:versionCode="9" android:versionName="0.5.2">
+      package="com.krikelin.spotify.watcher"
+      android:versionCode="11" android:versionName="0.8.3.2">
       <supports-screens 
         android:largeScreens="true"
         android:normalScreens="true" 
@@ -9,19 +9,39 @@
         android:anyDensity="true">   
     </supports-screens> 
        <uses-sdk android:minSdkVersion="3" />
-	    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/Spotify" android:description="@string/app_description" android:debuggable="true">
-	       
-	        <activity android:name=".main"
+     
+	    <application  android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/Spotify" android:description="@string/app_description" android:debuggable="false">
+	       <activity android:launchMode="singleInstance" android:icon="@drawable/icon" android:name=".home"
 	                  android:label="@string/app_name">
+	            <intent-filter> 
+	                <action android:name="android.intent.action.MAIN" /> 
+	                <category android:name="android.intent.category.LAUNCHER" />
+	            </intent-filter>
+	        </activity>
+	        <activity android:launchMode="singleInstance" android:icon="@drawable/icon" android:name=".main"
+	                  android:label="@string/app_name">
+	            
+	        </activity>
+	     <!--   <activity android:name=".ScanSong" android:label="@string/scan_song">
 	            <intent-filter> 
 	                <action android:name="android.intent.action.MAIN" />
 	                <category android:name="android.intent.category.LAUNCHER" />
 	            </intent-filter>
-	        </activity>
+	        </activity> --> 
 	        <activity android:name=".SongActivity"
 	                  android:label="@string/app_name"/> 
+	        <activity android:name=".StreamHistory" android:label="@string/stream_history"></activity>
 	        <activity android:name=".Preferences" />
 			<activity android:name=".PlayLogActivity" android:label="@string/play_log"></activity>    
+			<receiver android:name=".MyStartupIntentReceiver">
+				<intent-filter>
+				<action
+				android:name="android.intent.action.BOOT_COMPLETED" />
+				<category android:name="android.intent.category.HOME" />
+				</intent-filter>
+			</receiver>
+			<service android:name=".WatchService" android:enabled="true" />
+			<provider  android:name=".StreamProvider" android:permission="android.permission.INTERNET" android:grantUriPermissions="true" android:enabled="true" android:multiprocess="false" android:exported="true" android:authorities="com.krikelin.spotify.watcher.provider"></provider>
 	    </application>
    
 

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="128dp"
     android:orientation="horizontal" android:gravity="center_vertical">
-	<ImageView android:src="@drawable/play" android:layout_width="64dp" android:layout_height="64dp" android:layout_marginRight="3pt">
+	<ImageView android:src="@drawable/play" android:padding="11dp" android:layout_width="64dp" android:layout_height="64dp" android:layout_marginRight="3pt">
 	    
 	</ImageView>
 
@@ -21,11 +21,10 @@
 		    android:textAppearance="?android:attr/textAppearanceMedium" />
 
 		<TextView
-		    android:id="@+id/tvArtist"
+		    android:id="@+id/tvTime"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
-		    android:text="Medium Text"
-		    />
+		    android:text="Medium Text"/>
 
 	</LinearLayout>
 
@@ -33,6 +32,9 @@
 	    android:id="@+id/tvDuration"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:text="TextView" android:layout_marginLeft="30dp" android:textSize="12pt"/>
+	    android:text="TextView"
+		android:layout_marginLeft="30dp" 
+		android:visibility="invisible"
+	    android:textSize="12pt"/>
 
 </LinearLayout>

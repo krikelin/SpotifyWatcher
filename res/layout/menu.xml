@@ -2,17 +2,37 @@
 <LinearLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="fill_parent"
-  android:layout_height="64dp"
+  android:layout_height="64dp" 
+  android:id="@+id/menubar"
   android:orientation="horizontal">
-	<ImageButton android:src="@drawable/ic_home" android:id="@+id/mnuHome" android:layout_weight="1" android:background="@drawable/menubutton" android:layout_width="32pt" android:layout_height="32pt">
+	<ImageButton android:src="@drawable/ic_home" android:padding="10dp" android:id="@+id/mnuHome" android:layout_weight="1" android:background="@drawable/menubutton" android:layout_width="23pt" android:layout_height="match_parent">
 	    
 	</ImageButton>
-	<ImageButton android:id="@+id/mnuScan" android:src="@drawable/ic_scan" android:layout_weight="1" android:background="@drawable/menubutton" android:layout_width="32pt" android:layout_height="32pt">
+	<ImageButton android:id="@+id/mnuScan" android:padding="10dp" android:src="@drawable/ic_scan" android:layout_weight="1" android:background="@drawable/menubutton" android:layout_width="23pt" android:layout_height="match_parent">
 	    
 	</ImageButton>
-	<ImageButton android:id="@+id/mnuSettings" android:layout_weight="1" android:background="@drawable/menubutton" android:layout_width="32pt" android:layout_height="32pt">
+	<ImageButton android:id="@+id/mnuPlayLog" android:padding="10dp" android:layout_weight="1" android:background="@drawable/menubutton" android:src="@drawable/ic_logic" android:layout_width="23pt" android:layout_height="match_parent">
 	    
 	</ImageButton>
+
+	<ImageButton
+	    android:id="@+id/ImageButton02"
+	    android:layout_width="23pt"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+	    android:background="@drawable/menubutton"
+	    android:padding="10dp"
+	    android:src="@drawable/ic_scan" />
+
+	<ImageButton
+	    android:id="@+id/mnuSettings"
+	    android:layout_width="23pt"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+	    android:background="@drawable/menubutton"
+	    android:padding="10dp"
+	    android:src="@drawable/ic_menu_settings" />
+	
 </LinearLayout>
   
      

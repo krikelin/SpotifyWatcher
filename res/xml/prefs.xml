@@ -2,4 +2,5 @@
 <PreferenceScreen
   xmlns:android="http://schemas.android.com/apk/res/android">
 <EditTextPreference android:dialogMessage="Artist to show settings on" android:dialogTitle="Artist" android:key="Artist" android:selectable="true" android:defaultValue="Dr. Sounds" android:title="PrimaryArtist" android:enabled="true" android:shouldDisableView="false"></EditTextPreference>
+<CheckBoxPreference android:key="notify_stream" android:summary="@string/desc_pref_notify" android:title="@string/pref_notify"/>
 </PreferenceScreen>

@@ -2,7 +2,7 @@
 <resources>
     <string name="app_description">Watch a approximately daily plays for your content on spotify based on the popularity</string>
     <string name="hello">Hello World, main!</string>
-    <string name="app_name">SpotifyWatcher</string>
+    <string name="app_name">Spotify Watcher</string>
     <string name="str_countplays">Count plays</string>
     <string name="srcrp">Plays per day</string>
     <string-array name="genres">
@@ -15,4 +15,8 @@
         <item>Trance</item>
     </string-array>
     <string name="play_log">Play log </string>
+    <string name="scan_song">Scan song</string>
+    <string name="stream_history">Stream history</string>
+    <string name="pref_notify">Notify at new stream</string>
+    <string name="desc_pref_notify">Notify me when someone plays a song (from an predication source algoritm)</string>
 </resources>
